@@ -1,0 +1,16 @@
+﻿@model List<JuneMVC.Models.DogViewModel>
+
+@*
+    ViewData["Title"] = "Page";
+*@
+@{
+}
+<h1>Dog Archive</h1>
+<p>This is a list of desired dogs and their ages.</p>
+
+<ul>
+@foreach(var dog in Model)
+{
+    <li>@dog.Name (@dog.Age)</li>
+}
+</ul>
